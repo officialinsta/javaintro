@@ -7,7 +7,7 @@ public class DBTEST {
 	public static void main(String[] args) {
 		try {
 		new DBTEST();
-		}catch (SQLExceptionn e) {
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 }
@@ -15,6 +15,6 @@ public class DBTEST {
 		Connection conn = DriverManager.getConnection("jdbc:ucanaccess://C://Users//moritz-eliasschultze/DBTest.accdb;memory=false");
 		
 		Statement stmt = conn.createStatement();
-		stmt.execute("INSERT INTO address (vorname,nachname,ort,plz)" + "VALUES ('hansi','maier'")
+		stmt.execute("INSERT INTO address (vorname,nachname,ort,plz)" + "VALUES ('mayonese','maier','wien',1190)");
 	}
 }
